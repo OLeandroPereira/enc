@@ -2,18 +2,21 @@
   <div id="app">
     <AppHeader />
     <HeroSection />
+    <DescriptionSection />
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
 import HeroSection from './components/HeroSection.vue'
+import DescriptionSection from './components/DescriptionSection.vue'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    HeroSection
+    HeroSection,
+    DescriptionSection
   }
 }
 </script>
@@ -29,5 +32,9 @@ export default {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 </style>
