@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <AppHeader />
+    <HeroSection />
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
+import HeroSection from './components/HeroSection.vue'
 
 export default {
   name: 'App',
   components: {
-    AppHeader
+    AppHeader,
+    HeroSection
   }
 }
 </script>
