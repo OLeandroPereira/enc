@@ -30,7 +30,7 @@ export default {
 .hero-section {
   position: relative;
   width: 100%;
-  margin-top: 51px;
+  margin-top: 30px;
 }
 
 .hero-background {
@@ -48,10 +48,11 @@ export default {
 }
 
 .logo-promo {
-  max-width: 850px;
+  max-width: 1010px;
   width: 100%;
-  height: auto;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  margin-right: 140px;
+  margin-bottom: 80px;
+  
 }
 
 @keyframes fadeInDown {
@@ -65,17 +66,43 @@ export default {
   }
 }
 
-@media (max-width: 991.98px) {
-  .hero-background {
-    background-image: url('@/assets/bg-home-mob.webp');
+@media (max-width: 1600px) {
+  .hero-section {
+    margin-top: 50px;
   }
-  
+
   .logo-promo {
-    max-width: 550px;
+    max-width: 780px;
+    width: 100%;
+    margin-right: 110px;
+    margin-bottom: 80px;
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-background {
+    background-image: url('@/assets/bg-home-mob.webp');
+  }
+
+  .hero-section {
+    margin-top: 46px;
+  }
+
+  .hero-background {
+    min-height: calc(100vh - 70px);
+  }
+  
+  .logo-promo {
+    max-width: 650px;
+    margin: 0 0 150px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-background {
+    background-image: url('@/assets/bg-home-mob.webp');
+  }
+
   .hero-section {
     margin-top: 46px;
   }
@@ -85,7 +112,49 @@ export default {
   }
   
   .logo-promo {
-    max-width: 280px;
+    max-width: 600px;
+    margin: 0 0 150px 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Tablets pequenos em portrait */
+
+  .hero-background {
+    background-image: url('@/assets/bg-home-mob.webp');
+  }
+
+  .hero-section {
+    margin-top: 50px;
+  }
+
+  .hero-background {
+    min-height: calc(100vh - 70px);
+  }
+
+  .logo-promo {
+    max-width: 550px;
+    margin: 0 0 150px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Smartphones em portrait */
+  .hero-background {
+    background-image: url('@/assets/bg-home-mob.webp');
+  }
+
+  .hero-section {
+    margin-top: 45px;
+  }
+
+  .hero-background {
+    min-height: calc(100vh - 70px);
+  }
+
+  .logo-promo {
+    max-width: 450px;
+    margin: 0 0 150px 0;
   }
 }
 
