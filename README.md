@@ -1,22 +1,51 @@
-Esse é um teste de um site exemplo que nós temos.
-O foco desse teste é avaliar o conhecimento de Vue, html, css, Layout e Layout RESPONSIVO.
+# Hellmann's Homepage - Teste Técnico
 
-Requisitos:
- - Montar a homepage utilizando html e css;
- - Utilizar Vue.js 2 ou Vue 3.
+Este projeto é uma implementação da homepage da Hellmann's utilizando Vue.js 2, seguindo o layout fornecido e com foco em responsividade.
 
-Material:
-- todo o material da home está na pasta material_recortado;
-- na raiz tem o arquivo de referencia para utilização do Layout;
+## 🚀 Tecnologias Utilizadas
 
-Dicas:
-- O Layout é feito dentro das grids do Bootstrap, logo, pode ajudar na montagem do home page;
+- Vue.js 2.6.14
+- Bootstrap 5.3.0
+- HTML5 & CSS3
 
-Entrega:
-- Pode dar um fork no repositório e fazer o PR;
-- Pode clonar e disponibilizar dentro do seu próprio github;
+## 📋 Requisitos Atendidos
 
-Prazo de entrega:
-- irei avaliar os commits dentro de 4 dias após o recebimento;
-- dentro de 2 dias retorno com o feedback.
+- ✅ Homepage montada com HTML e CSS
+- ✅ Utilização do Vue.js 2
+- ✅ Layout responsivo baseado no Bootstrap
+- ✅ Materiais da pasta `_Material-recortado` utilizados
 
+## 🛠️ Instalação e Execução
+
+### Instalação das dependências
+```bash
+npm install
+```
+
+### Executar em modo de desenvolvimento
+```bash
+npm run serve
+```
+
+### Build para produção
+```bash
+npm run build
+```
+
+### Linting
+```bash
+npm run lint
+```
+
+## 📁 Estrutura do Projeto
+
+- `src/App.vue` - Componente principal da aplicação
+- `src/components/` - Componentes da homepage
+- `_Material-recortado/` - Assets e materiais fornecidos
+- `public/` - Arquivos públicos e index.html
+
+## 🎯 Funcionalidades Implementadas
+
+- Layout responsivo seguindo as diretrizes do Bootstrap
+- Estrutura de componentes Vue.js organizada
+- Otimização de imagens e performance
