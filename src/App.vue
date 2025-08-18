@@ -4,6 +4,7 @@
     <HeroSection />
     <DescriptionSection />
     <PremiosSection />
+    <ComoJogarSection />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import AppHeader from './components/AppHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import DescriptionSection from './components/DescriptionSection.vue'
 import PremiosSection from './components/PremiosSection.vue'
+import ComoJogarSection from './components/ComoJogarSection.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     AppHeader,
     HeroSection,
     DescriptionSection,
-    PremiosSection
+    PremiosSection,
+    ComoJogarSection
   }
 }
 </script>
