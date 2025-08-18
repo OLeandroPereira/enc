@@ -2,18 +2,32 @@
   <header class="app-header">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <button 
-          class="navbar-toggler d-lg-none" 
-          type="button" 
-          @click="toggleMobileMenu"
-          :class="{ 'active': showMobileMenu }"
+        <div class="mobile-nav-left d-lg-none">
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            @click="toggleMobileMenu"
+            :class="{ 'active': showMobileMenu }"
+          >
+            <span class="hamburger-icon">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </span>
+          </button>
+
+          <div class="mobile-logo">
+            <img src="@/assets/logo-mobile.png" alt="Logo" />
+          </div>
+        </div>
+
+        <a 
+          class="mobile-participe-btn d-lg-none"
+          href="#participe" 
+          @click="setActiveItem('participe')"
         >
-          <span class="hamburger-icon">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </span>
-        </button>
+          PARTICIPE
+        </a>
 
         <div class="navbar-collapse" :class="{ 'show': showMobileMenu }">
           <ul class="navbar-nav nav-menu">
@@ -57,9 +71,9 @@
                 RANKING
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-lg-block">
               <a 
-                class="nav-link" 
+                class="nav-link nav-participe" 
                 :class="{ 'active': activeItem === 'participe' }"
                 href="#participe" 
                 @click="setActiveItem('participe')"
@@ -124,6 +138,11 @@ export default {
 
 .container-fluid {
   padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
 }
 
 .nav-menu {
@@ -136,8 +155,13 @@ export default {
 }
 
 .nav-item {
+  font-family: 'DollopSerif', serif;
   margin: 0;
   text-align: center;
+}
+
+.nav-item > a {
+  font-weight: 900;
 }
 
 .nav-link {
@@ -156,13 +180,70 @@ export default {
 }
 
 .nav-link:hover {
-  background-color: #1559a7 !important;
+  background-color: #0d4085 !important;
   color: #FFD700 !important;
 }
 
 .nav-link.active {
+  background-color: #0d4085 !important;
+  color: #FFD700 !important;
+}
+
+.nav-link.nav-participe {
   background-color: #1559a7 !important;
   color: #FFD700 !important;
+}
+
+.nav-link.nav-participe:hover {
+  background-color: #0d4085 !important;
+  color: #FFD700 !important;
+}
+
+.nav-link.nav-participe.active {
+  background-color: #0d4085 !important;
+  color: #FFD700 !important;
+}
+
+.mobile-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 15px;
+}
+
+.mobile-participe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1559a7 !important;
+  color: #FFD700 !important;
+  font-family: 'DollopSerif', serif;
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 15px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  z-index: 1002;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.mobile-participe-btn:hover {
+  background-color: #0d4085 !important;
+  color: #FFD700 !important;
+}
+
+.mobile-logo {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-logo img {
+  height: 35px;
+  width: auto;
 }
 
 
@@ -170,7 +251,6 @@ export default {
   border: none;
   padding: 10px;
   background: transparent;
-  margin-left: 10px;
   position: relative;
   z-index: 1001;
 }
@@ -266,7 +346,6 @@ export default {
   .navbar-collapse.show .nav-item:nth-child(2) { animation-delay: 0.2s; }
   .navbar-collapse.show .nav-item:nth-child(3) { animation-delay: 0.3s; }
   .navbar-collapse.show .nav-item:nth-child(4) { animation-delay: 0.4s; }
-  .navbar-collapse.show .nav-item:nth-child(5) { animation-delay: 0.5s; }
 
   .nav-link {
     padding: 15px 20px !important;
@@ -290,10 +369,30 @@ export default {
   .navbar {
     min-height: 45px;
   }
+
+  .container-fluid {
+    height: 45px;
+  }
   
   .nav-link {
     font-size: 13px;
     padding: 12px 15px !important;
+  }
+
+  .mobile-participe-btn {
+    font-size: 11px;
+    padding: 0 12px;
+    height: 45px;
+    margin-right: 10px;
+  }
+
+  .mobile-nav-left {
+    padding-left: 10px;
+    gap: 10px;
+  }
+
+  .mobile-logo img {
+    height: 30px;
   }
 }
 </style>
