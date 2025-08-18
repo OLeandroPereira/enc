@@ -3,6 +3,7 @@
     <AppHeader />
     <HeroSection />
     <DescriptionSection />
+    <PremiosSection />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import AppHeader from './components/AppHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import DescriptionSection from './components/DescriptionSection.vue'
+import PremiosSection from './components/PremiosSection.vue'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     HeroSection,
-    DescriptionSection
+    DescriptionSection,
+    PremiosSection
   }
 }
 </script>
