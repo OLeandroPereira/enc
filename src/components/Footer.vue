@@ -120,9 +120,9 @@ export default {
 .footer-link {
   color: white;
   text-decoration: none;
-  font-weight: bold;
   font-size: 1.1rem;
   transition: opacity 0.3s ease;
+  font-family: 'DollopSerif', serif;
 }
 
 .footer-link:hover {
