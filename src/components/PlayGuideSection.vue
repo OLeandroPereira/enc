@@ -1,5 +1,5 @@
 <template>
-  <section id="como-jogar" class="como-jogar-section">
+  <section class="como-jogar-section" id="como-participar">
     <div class="how-to-play-title">
       <img src="@/assets/images/titulo-como-jogar.webp" alt="Como Jogar" class="title-img" />
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section">
+  <section class="hero-section" id="home">
     <div class="hero-background">
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center min-vh-100">

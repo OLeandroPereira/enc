@@ -45,7 +45,7 @@
               <a 
                 class="nav-link" 
                 :class="{ 'active': activeItem === 'premios' }"
-                href="#premios" 
+                href="#ranking" 
                 @click="setActiveItem('premios')"
               >
                 PRÊMIOS
@@ -107,6 +107,12 @@ export default {
     setActiveItem(item) {
       this.activeItem = item
       this.closeMenu()
+      this.$nextTick(() => {
+        const el = document.getElementById(item)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' })
+        }
+      })
     }
   },
   mounted() {

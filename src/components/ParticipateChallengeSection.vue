@@ -1,5 +1,5 @@
 <template>
-  <section class="challenge-section">
+  <section class="challenge-section"  id="participe">
       <div class="row justify-content-center">
         <div class="col-12 text-center">
           

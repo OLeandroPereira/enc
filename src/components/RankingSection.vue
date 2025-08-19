@@ -1,5 +1,5 @@
 <template>
-  <section class="premios-section">
+  <section class="premios-section" id="ranking">
     <img src="@/assets/images/premios-balao-1.webp" alt="Balão lado esquerdo" class="balao-fixo-esquerdo">
     
     <img src="@/assets/images/premios-balao-2.webp" alt="Balão lado direito" class="balao-fixo-direito">
