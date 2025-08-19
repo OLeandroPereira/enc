@@ -17,7 +17,7 @@
           </button>
 
           <div class="mobile-logo">
-            <img src="@/assets/logo-mobile.png" alt="Logo" />
+            <img src="@/assets/images/logo-mobile.png" alt="Logo" />
           </div>
         </div>
 

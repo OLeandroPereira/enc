@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <AppHeader />
+    <Header />
     <HeroSection />
-    <DescriptionSection />
-    <PremiosSection />
-    <ComoJogarSection />
+    <ParticipateChallengeSection />
+    <RankingSection />
+    <PlayGuideSection />
   </div>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue'
+import Header from './components/Header.vue'
 import HeroSection from './components/HeroSection.vue'
-import DescriptionSection from './components/DescriptionSection.vue'
-import PremiosSection from './components/PremiosSection.vue'
-import ComoJogarSection from './components/ComoJogarSection.vue'
+import ParticipateChallengeSection from './components/ParticipateChallengeSection.vue'
+import RankingSection from './components/RankingSection.vue'
+import PlayGuideSection from './components/PlayGuideSection.vue'
 
 export default {
   name: 'App',
   components: {
-    AppHeader,
+    Header,
     HeroSection,
-    DescriptionSection,
-    PremiosSection,
-    ComoJogarSection
+    ParticipateChallengeSection,
+    RankingSection,
+    PlayGuideSection
   }
 }
 </script>

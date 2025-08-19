@@ -7,7 +7,7 @@
             
             <div class="promo-logo-container">
               <img 
-                src="@/assets/logo-promo.webp" 
+                src="@/assets/images/logo-promo.webp" 
                 alt="Loot Irresistível" 
                 class="logo-promo"
               >
@@ -37,7 +37,7 @@ export default {
   position: relative;
   width: 100%;
   min-height: calc(100vh - 80px);
-  background-image: url('@/assets/bg-home.webp');
+  background-image: url('@/assets/images/bg-home.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@ export default {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .hero-background {
-    background-image: url('@/assets/bg-home-mob.webp');
+    background-image: url('@/assets/images/bg-home-mob.webp');
   }
 
   .hero-section {
@@ -100,7 +100,7 @@ export default {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .hero-background {
-    background-image: url('@/assets/bg-home-mob.webp');
+    background-image: url('@/assets/images/bg-home-mob.webp');
   }
 
   .hero-section {
@@ -118,10 +118,9 @@ export default {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* Tablets pequenos em portrait */
 
   .hero-background {
-    background-image: url('@/assets/bg-home-mob.webp');
+    background-image: url('@/assets/images/bg-home-mob.webp');
   }
 
   .hero-section {
@@ -139,9 +138,8 @@ export default {
 }
 
 @media (max-width: 575.98px) {
-  /* Smartphones em portrait */
   .hero-background {
-    background-image: url('@/assets/bg-home-mob.webp');
+    background-image: url('@/assets/images/bg-home-mob.webp');
   }
 
   .hero-section {
