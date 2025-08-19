@@ -4,7 +4,7 @@ Este projeto é uma implementação da homepage da Hellmann's utilizando Vue.js 
 
 ## 🚀 Tecnologias Utilizadas
 
-- Vue.js 2.6.14
+- Vue.js 2
 - Bootstrap 5.3.0
 - HTML5 & CSS3
 
