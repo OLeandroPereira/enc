@@ -5,7 +5,7 @@
     <ParticipateChallengeSection />
     <RankingSection />
     <PlayGuideSection />
-    <SiteFooter />
+    <Footer />
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import HeroSection from './components/HeroSection.vue'
 import ParticipateChallengeSection from './components/ParticipateChallengeSection.vue'
 import RankingSection from './components/RankingSection.vue'
 import PlayGuideSection from './components/PlayGuideSection.vue'
-import SiteFooter from './components/Footer.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
@@ -25,7 +25,7 @@ export default {
     ParticipateChallengeSection,
     RankingSection,
     PlayGuideSection,
-    SiteFooter
+    Footer
   }
 }
 </script>
