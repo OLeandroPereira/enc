@@ -71,7 +71,6 @@ export default {
   background: #074A75;
   color: white;
   padding: 20px 0;
-  margin-top: 40px;
 }
 
 .decoration-full-width {
